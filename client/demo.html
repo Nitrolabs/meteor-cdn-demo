@@ -1,0 +1,210 @@
+<head>
+	<title>Meteor CDN Demo</title>
+	<meta name="description" content="Meteor CDN Demo created by Nitrolabs. Serve Meteor apps from a CDN">
+	<meta name="keywords" content="meteor, cdn, javascript, cloudfront, cloudflare">
+	<meta name="copyright" content="Copyright © 2016 Nitrolabs. All Rights Reserved.">
+	<meta name="author" content="Nitrolabs">
+	<meta name="theme-color" content="#ffffff">
+	<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#" id="logo-container" class="brand-logo">CDN</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#intro">Service</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Theme</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav" style="left: -250px;">
+                    <li><a href="#intro">Service</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>Meteor CDN Demo</span>
+        </h1>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center header text_h2">
+                The static resources on this page
+                are served from <span class="span_h2">{{CDN_URL}}</span> 
+                </h2>
+                <br>
+                <br>
+            </div>
+
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-image-flash-on"></i>
+                    <h5 class="promo-caption">Faster page loads</h5>
+                    <p class="light center">Static resources are served from a different domain
+                    increasing download parallelization</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-social-group"></i>
+                    <h5 class="promo-caption">Reduced bandwidth</h5>
+                    <p class="light center">Serving files from a CDN reduces the bandwidth consumed by the application servers.
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">Better Caching</h5>
+                    <p class="light center">Using a CDN allows almost all of your application code to be cached.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Serving Images </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{CDN_URL}}/img/project1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">First Image</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{CDN_URL}}/img/project2.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Second Image</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{CDN_URL}}/img/project3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Third Image</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{CDN_URL}}/img/project4.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Fourth Image</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{CDN_URL}}/img/project5.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Fifth Image</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{CDN_URL}}/img/project6.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Sixth Image</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Additional Details-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="fa fa-check-circle-o"></i>
+                    <h5 class="promo-caption">Proper 404s</h5>
+                    <p class="light center">By default Meteor returns a 200 reponse code, even for missing resources.
+                    CDN ensures that Meteor returns a proper 404 missing resources. Try loading
+                    <a href="{{CDN_URL}}/missing.css">missing.css</a> or <a href="{{CDN_URL}}/expired.js">expired.js</a></p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="fa fa-file-code-o"></i>
+                    <h5 class="promo-caption">Cross Origin Headers</h5>
+                    <p class="light center">Meteor CDN adds cross-origin and STS headers to webfonts
+                    to solve cross-origin problems in Google Chrome</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <h5 class="promo-caption">Template Helper</h5>
+                    <p class="light center">The template helper
+                <span class="span_h2">&#123;&#123;CDN_URL&#125;&#125;</span>
+                provides a quick way to get the CDN url in Blaze templates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section no-pad-bot" id="footer-banner">
+    <div class="container">
+        <p>Meteor CDN was developed by <a href="http://www.nitrolabs.com/">Nitrolabs</a> for the Meteor Community. The source for this demo is available on <a href="https://github.com/NitroLabs/meteor-cdn-demo" title="CDN Demo">Github</a>. The Meteor CDN package can be found on <a href="https://github.com/NitroLabs/meteor-cdn" title="CDN on Github">Github</a> and
+        <a href="https://atmospherejs.com/maxkferg/cdn" title="CDN on Atmosphere">Atmosphere</a>. Suggestions and pull requests are welcome.</p>
+    </div>
+</div>
+
+</body>
