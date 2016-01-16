@@ -18,13 +18,13 @@
     position: relative;
     background-color: #2196F3;
 }
-#footer-banner {
+#about {
     padding: 50px 0;
     position: relative;
     background-color: #2196F3;
     color: white;
 }
-#footer-banner a {
+#about a {
     color: white;
     text-decoration: underline;
 }
