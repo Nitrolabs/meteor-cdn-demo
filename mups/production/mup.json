@@ -3,7 +3,7 @@
   //  - 4 x 2 - cores server running as both server and load balancer
   "servers": [
     {
-      "host": "cdn.luminpdf.com",
+      "host": "cdn.nitrolabs.com",
       "username": "ubuntu",
       "pem": "./ssh.pem"
     }
@@ -16,7 +16,7 @@
   "setupNode": true,
 
   // WARNING: If nodeVersion omitted will setup 0.10.33 by default. Do not use v, only version number.
-  "nodeVersion": "0.10.36",
+  "nodeVersion": "0.12.7",
 
   // Install PhantomJS in the server
   "setupPhantom": true,
