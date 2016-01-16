@@ -1,6 +1,7 @@
 # Meteor-cdn-demo
 
-Simple demo project used to test [maxkferg:cdn](https://github.com/NitroLabs/meteor-cdn).
+Simple demo project used to test [nitrolabs:cdn](https://github.com/NitroLabs/meteor-cdn).
+This demo is serving live at [http://cdn.nitrolabs.com/](http://cdn.nitrolabs.com/).
 
 # Running
 The project can be run on a development machine. The project should be tested with and without the CDN enabled
@@ -20,7 +21,7 @@ The second example will not actually work unless http://www.mycdn.com points bac
 # Testing
 This package has extensive unit tests
 ```sh
-meteor test-packages maxkferg:cdn
+meteor test-packages nitrolabs:cdn
 ```
 
 # Licence
