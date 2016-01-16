@@ -1,4 +1,3 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
-}
+Meteor.startup(function(){
+	console.log("Meteor server is running!")
+});
